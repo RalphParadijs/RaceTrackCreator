@@ -14,6 +14,4 @@ public class SceneManager : MonoBehaviour
     {
         RaceCreatorScreen.SetActive(!RaceCreatorScreen.activeSelf);
     }
-
-
 }
