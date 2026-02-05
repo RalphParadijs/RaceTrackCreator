@@ -20,11 +20,5 @@ public class CreateTrackManager : MonoBehaviour
         Debug.Log("Track Created: " + trackName + " by " + trackAuthor + ". Description: " + trackDescription);
     }
 
-    public void LoopThroughTrack()
-    {
-        for (int i =0; i <= tracks.Count; i++)
-        {
-            Debug.Log("Track: " + tracks[i].name);
-        }
-    }
+    
 }
