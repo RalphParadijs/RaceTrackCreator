@@ -5,7 +5,7 @@ public class RaceCreatorScreenLogic : MonoBehaviour
     public GameObject CreateTrackManager;
     
     //OnEnabled is 
-    void OnEnabled()
+    void OnEnable()
     {
         var tracks = CreateTrackManager.GetComponent<CreateTrackManager>().tracks;
         for (int i = 0; i < tracks.Count; i++)
