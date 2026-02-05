@@ -1,4 +1,6 @@
 using UnityEngine;
+//Build error: Namespace 'UnityEditor' is not allowed to be used in runtime scripts.
+using UnityEditor;
 
 public class SceneManager : MonoBehaviour
 {
@@ -8,10 +10,12 @@ public class SceneManager : MonoBehaviour
     
     public void ShowHideMainScreen()
     {
-        MainScreen.SetActive(!MainScreen.activeSelf);
+        //compiler error: syntax error
+        MainScreen.SetActive(!MainScreen.activeSelf)
     }
     public void ShowHideRaceCreatorScreen()
     {
-        RaceCreatorScreen.SetActive(!RaceCreatorScreen.activeSelf);
+        //compiler error: syntax error
+        RaceCreatorScreen.SetActiveObject(!RaceCreatorScreen.activeSelf);
     }
 }
