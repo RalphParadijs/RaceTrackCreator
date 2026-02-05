@@ -8,7 +8,7 @@ public class RaceCreatorScreenLogic : MonoBehaviour
     void OnEnabled()
     {
         var tracks = CreateTrackManager.GetComponent<CreateTrackManager>().tracks;
-        for (int i = 0; i <= tracks.Count; i++)
+        for (int i = 0; i < tracks.Count; i++)
         {
             Debug.Log("Track: " + tracks[i].name);
         }
